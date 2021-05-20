@@ -56,6 +56,11 @@ public enum MetaImo {
   }
 
   /**
+   *
+   * TIPS: getterが多くなったのでどうやって減らすかを検討する
+   */
+
+  /**
    * イモ娘の名前を返す
    * @return
    */
@@ -65,6 +70,26 @@ public enum MetaImo {
 
   public String getId() {
     return this.id;
+  }
+
+  public Status getSweetness() {
+    return this.sweetness;
+  }
+
+  public Status getNutrition() {
+    return this.nutrition;
+  }
+
+  public Status getSmell() {
+    return this.smell;
+  }
+
+  public Status getResistance() {
+    return this.resistance;
+  }
+
+  public Status getProductivity() {
+    return this.productivity;
   }
 
   /**
@@ -87,4 +112,5 @@ public enum MetaImo {
     }
     return null;
   }
+
 }

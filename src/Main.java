@@ -16,20 +16,20 @@ public class Main {
     };
 
     Imo kintoki = new Imo("金時",
-        1,10,
-        1,  10,
-        1,  0,
-        1,  0,
-        1,  10);
+        86,  0,
+        91,  20,
+        83,  0,
+        96,  10,
+        94,  0);
     ArrayList<String> kintokiStatus = new ArrayList<>(kintoki.getStatusToString());
     showStatus.accept(kintokiStatus);
 
     Imo beniazuma = new Imo("紅あずま",
-        1,10,
-        1,  10,
-        1,  0,
-        1,  0,
-        1,  10);
+        93,  10,
+        89,  20,
+        100,  0,
+        89,  0,
+        79,  0);
 
     ArrayList<String> beniazumaStatus = new ArrayList<String>(beniazuma.getStatusToString());
     showStatus.accept(beniazumaStatus);

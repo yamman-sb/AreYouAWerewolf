@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
@@ -18,23 +17,18 @@ public class Main {
       }
     };
 
-    Imo kintoki = new Imo("金時",
-        86,  0,
-        91,  20,
-        83,  0,
-        96,  10,
-        94,  0);
-    ArrayList<String> kintokiStatus = new ArrayList<>(kintoki.getNameAndStatusToString());
+    ArrayList<String> kintokiStatus = new ArrayList<>(MetaImo.KINTOKI.getNameAndStatusToString());
     showStatus.accept(kintokiStatus);
 
-    Imo beniazuma = new Imo("紅あずま",
-        93,  10,
-        89,  20,
-        100,  0,
-        89,  0,
-        79,  0);
-
-    ArrayList<String> beniazumaStatus = new ArrayList<String>(beniazuma.getNameAndStatusToString());
+    ArrayList<String> beniazumaStatus = new ArrayList<String>(MetaImo.KINTOKI.getNameAndStatusToString());
     showStatus.accept(beniazumaStatus);
   }
+
+  // 育成するイモ娘を選択する
+
+  // 因子を引き継ぐイモ娘を選択する
+
+  // イモ娘の育成を行う
+
+  // 育成したイモ娘の因子を決定する
 }

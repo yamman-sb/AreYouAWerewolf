@@ -1,8 +1,26 @@
 public class Imo {
   private final Status sweetness;
+  private final Status nutrition;
+  private final Status smell;
+  private final Status resistance;
+  private final Status productivity;
 
-  public Imo(int sweetnessScore, int sweetnessGrowthRate) {
-    this.sweetness = new Status("甘さ", sweetnessScore, sweetnessGrowthRate);
+  public Imo(int sweetnessScore,    int sweetnessGrowthRate,
+             int nutritionScore,    int nutritionGrowthRate,
+             int smellScore,        int smellGrowthRate,
+             int resistanceScore,   int resistanceGrowthRate,
+             int productivityScore, int productivityGrowthRate) {
+    this.sweetness    = new Status("甘さ",  sweetnessScore,     sweetnessGrowthRate);
+    this.nutrition    = new Status("栄養",  nutritionScore,     nutritionGrowthRate);
+    this.smell        = new Status("匂い",  smellScore,         smellGrowthRate);
+    this.resistance   = new Status("耐性",  resistanceScore,    resistanceGrowthRate);
+    this.productivity = new Status("生産性", productivityScore,  productivityGrowthRate);
+
+
+  }
+
+  public Status getSweetness() {
+    return this.sweetness;
   }
 
   public class Status {
@@ -17,7 +35,7 @@ public class Imo {
     }
 
     public String toString() {
-      return name;
+      return name + " : " + score;
     }
 
     public int getSroce() {

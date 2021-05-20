@@ -5,6 +5,9 @@ import java.util.function.Consumer;
 public class Main {
   public static void main(String[] args){
 
+    /**
+     * イモ娘のステータスを表示する
+     */
     Consumer<ArrayList<String>> showStatus = new Consumer<ArrayList<String>>() {
       @Override
       public void accept(ArrayList arrayList) {
@@ -21,7 +24,7 @@ public class Main {
         83,  0,
         96,  10,
         94,  0);
-    ArrayList<String> kintokiStatus = new ArrayList<>(kintoki.getStatusToString());
+    ArrayList<String> kintokiStatus = new ArrayList<>(kintoki.getNameAndStatusToString());
     showStatus.accept(kintokiStatus);
 
     Imo beniazuma = new Imo("紅あずま",
@@ -31,7 +34,7 @@ public class Main {
         89,  0,
         79,  0);
 
-    ArrayList<String> beniazumaStatus = new ArrayList<String>(beniazuma.getStatusToString());
+    ArrayList<String> beniazumaStatus = new ArrayList<String>(beniazuma.getNameAndStatusToString());
     showStatus.accept(beniazumaStatus);
   }
 }

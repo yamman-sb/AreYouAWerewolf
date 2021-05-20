@@ -27,7 +27,11 @@ public class Imo {
     this.productivity = new Status("生産性", productivityScore,  productivityGrowthRate);
   }
 
-  public List<String> getStatusToString() {
+  /**
+   * 名前とステータスをstringの配列として返す
+   * @return
+   */
+  public List<String> getNameAndStatusToString() {
     return List.of(name, sweetness.toString(), nutrition.toString(),
         smell.toString(), resistance.toString(), productivity.toString());
   }

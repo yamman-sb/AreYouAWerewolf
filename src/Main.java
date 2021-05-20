@@ -35,11 +35,8 @@ public class Main {
     // 因子を引き継ぐイモ娘を選択する
 
     // イモ娘の育成を行う
-
-    System.out.println("---- 育成開始！ ----");
     Imo traningImo = new Imo(traningMetaImo);
-
-    Traning traning = new Traning(traningImo);
+    Growing traning = new Growing(traningImo);
     traning.start();
 
     // 育成したイモ娘の因子を決定する
